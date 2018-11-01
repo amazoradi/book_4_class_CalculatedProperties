@@ -6,7 +6,7 @@ class Restaurants {
   }
 
   set combo(items) {
-    if (typeof items === "object"){
+    if (Array.isArray(items)){
       return this._combo = items
     }
   }
